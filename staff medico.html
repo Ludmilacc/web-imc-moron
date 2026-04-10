@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Médico - IMC Morón</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .bg-navy { background-color: #1a365d; }
+        .text-navy { color: #1a365d; }
+        .border-navy { border-color: #1a365d; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- NAVBAR (Idéntico para consistencia) -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <div class="font-bold text-2xl text-navy tracking-tighter">
+                            IMC<span class="text-blue-500">.</span>
+                        </div>
+                        <div class="ml-2 leading-none border-l-2 border-navy pl-2 hidden md:block">
+                            <span class="text-[10px] uppercase block font-bold tracking-widest">Instituto de</span>
+                            <span class="text-[10px] uppercase block">Medicina Cutánea</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-navy transition">Inicio</a>
+                    <a href="index.html#sobre-nosotros" class="text-gray-600 hover:text-navy transition">Sobre Nosotros</a>
+                    <a href="equipo.html" class="text-navy font-semibold hover:text-blue-600 transition">Equipo Médico</a>
+                    <a href="especialidades.html" class="text-gray-600 hover:text-navy transition">Especialidades</a>
+                    <a href="estetica.html" class="text-gray-600 hover:text-navy transition">Estética</a>
+                    <a href="contacto.html" class="bg-navy text-white px-5 py-2 rounded-full hover:bg-blue-900 transition shadow-md">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HEADER SECCIÓN -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h1 class="text-4xl font-bold text-navy mb-4">Nuestro Staff Médico</h1>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    Contamos con un equipo de profesionales altamente calificados, dedicados a la salud integral de tu piel bajo los más altos estándares éticos y científicos.
+                </p>
+            </div>
+        </section>
+
+        <!-- DIRECCIÓN MÉDICA -->
+        <section class="py-16 max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-navy mb-10 flex items-center">
+                <span class="w-10 h-1 bg-blue-500 mr-4"></span> Dirección Médica
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Director -->
+                <div class="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="md:w-1/2">
+                        <!-- IMAGEN: Foto Dr. Carlos Fernando Gatti -->
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80" alt="Dr. Carlos Fernando Gatti" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                        <span class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-2">Director Médico</span>
+                        <h3 class="text-2xl font-bold text-navy mb-2">Dr. Carlos Fernando Gatti</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Referente con trayectoria internacional en dermatología clínica y quirúrgica.</p>
+                    </div>
+                </div>
+
+                <!-- Subdirectora -->
+                <div class="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="md:w-1/2">
+                        <!-- IMAGEN: Foto Dra. Lianet Silverio -->
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80" alt="Dra. Lianet Altagracia Silverio Carrasco" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                        <span class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-2">Subdirectora Médica</span>
+                        <h3 class="text-xl font-bold text-navy mb-2">Dra. Lianet Altagracia Silverio Carrasco</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Especialista en dermatología con enfoque en diagnóstico avanzado y gestión médica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESPECIALISTAS -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-2xl font-bold text-navy mb-10 flex items-center">
+                    <span class="w-10 h-1 bg-blue-500 mr-4"></span> Especialistas
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Staff 1: Dra. Yamila Gándara -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 text-center shadow-sm">
+                        <!-- IMAGEN: Dra. Yamila Gándara -->
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80" alt="Dra. Yamila Gándara" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-navy">Dra. Yamila Gándara</h4>
+                        <p class="text-blue-600 text-xs font-semibold uppercase mt-1">Dermatología</p>
+                    </div>
+
+                    <!-- Staff 2: Dra. Virginia Turner -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 text-center shadow-sm">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
+                            <!-- IMAGEN: Dra. Virginia Turner -->
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80" alt="Dra. Virginia Turner" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-navy">Dra. Virginia Turner</h4>
+                        <p class="text-blue-600 text-xs font-semibold uppercase mt-1">Dermatología</p>
+                    </div>
+
+                    <!-- Staff 3: Dra. Ana María Cisneros -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 text-center shadow-sm">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
+                            <!-- IMAGEN: Dra. Ana María Cisneros -->
+                            <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80" alt="Dra. Ana María Cisneros" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-navy">Dra. Ana María Cisneros</h4>
+                        <p class="text-blue-600 text-xs font-semibold uppercase mt-1">Dermatología</p>
+                    </div>
+
+                    <!-- Staff 4: Dra. Lisseth Toapanta -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 text-center shadow-sm">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
+                            <!-- IMAGEN: Dra. Lisseth Toapanta -->
+                            <img src="https://images.unsplash.com/photo-1623854275502-d13b9e17c061?auto=format&fit=crop&q=80" alt="Dra. Lisseth Toapanta" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="font-bold text-navy">Dra. Lisseth Toapanta</h4>
+                        <p class="text-blue-600 text-xs font-semibold uppercase mt-1">Dermatología</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COSMETOLOGÍA Y ESTÉTICA -->
+        <section class="py-16 max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-navy mb-10 flex items-center">
+                <span class="w-10 h-1 bg-blue-500 mr-4"></span> Cosmiatría y Estética
+            </h2>
+            
+            <div class="max-w-md">
+                <div class="flex items-center bg-white p-6 rounded-xl border border-blue-100 shadow-sm">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
+                        <!-- IMAGEN: Andrea Souto -->
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80" alt="Andrea Souto" class="w-full h-full object-cover">
+                    </div>
+                    <div class="ml-6">
+                        <h4 class="text-xl font-bold text-navy">Andrea Souto</h4>
+                        <p class="text-gray-600">Especialista en Cosmiatría</p>
+                        <p class="text-blue-500 text-xs mt-2 font-bold uppercase tracking-widest italic">Tratamientos Médicos Supervisados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (Idéntico para consistencia) -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-navy font-bold text-xl mb-4">IMC</h3>
+                    <p class="text-gray-500 leading-relaxed">Más de 40 años dedicados a la salud y estética de tu piel en el corazón de Morón.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> Rep. Oriental del Uruguay 279, Morón</li>
+                        <li><i class="fab fa-whatsapp text-green-500 mr-2"></i> 11 4629-1967</li>
+                        <li><i class="fab fa-instagram text-pink-500 mr-2"></i> @imc.piel</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy mb-4">Horarios</h4>
+                    <p class="text-gray-600">Lunes a Viernes: 09:00 - 19:00 hs</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Instituto de Medicina Cutánea. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

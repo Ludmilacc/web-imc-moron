@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Instituto de Medicina Cutánea</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1a365d',
+                        medicalBlue: '#3b82f6',
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-effect { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 glass-effect border-b border-gray-100 h-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="text-3xl font-extrabold text-navy tracking-tighter italic">IMC<span class="text-medicalBlue">.</span></span>
+                <div class="hidden sm:block border-l-2 border-navy pl-3 leading-tight uppercase">
+                    <span class="text-[10px] block font-bold text-navy">Instituto de</span>
+                    <span class="text-[10px] block text-gray-500">Medicina Cutánea</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 font-semibold text-gray-600">
+                <a href="index.html" class="text-navy hover:text-medicalBlue transition-all">Inicio</a>
+                <a href="equipo.html" class="hover:text-navy transition-all">Staff Médico</a>
+                <a href="especialidades.html" class="hover:text-navy transition-all">Especialidades</a>
+                <a href="estetica.html" class="hover:text-navy transition-all">Estética</a>
+                <a href="contacto.html" class="bg-navy text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="py-12 lg:py-20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-block px-4 py-1.5 bg-blue-50 rounded-full text-blue-600 text-xs font-bold uppercase tracking-widest">
+                    40 años de trayectoria impecable
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-navy leading-tight tracking-tight">
+                    Excelencia Médica en el Cuidado de tu <span class="text-medicalBlue">Piel.</span>
+                </h1>
+                <p class="text-lg text-gray-500 max-w-lg leading-relaxed">
+                    Referentes en Morón con más de cuatro décadas brindando diagnósticos precisos y tratamientos de vanguardia en dermatología clínica y estética.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="contacto.html" class="px-8 py-4 bg-navy text-white rounded-2xl font-bold text-center hover:shadow-2xl transition-all hover:-translate-y-1">
+                        Reservar Turno
+                    </a>
+                    <a href="estetica.html" class="px-8 py-4 border-2 border-gray-100 text-navy rounded-2xl font-bold text-center hover:border-navy transition-all">
+                        Servicios Estéticos
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <!-- IMAGEN: Foto de la clínica/fachada o consultorio -->
+                <div class="rounded-4xl overflow-hidden shadow-2xl h-[400px] lg:h-[600px]">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80" alt="Clínica IMC" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl hidden md:block">
+                    <p class="text-navy font-bold text-4xl italic">40+</p>
+                    <p class="text-gray-400 text-xs font-bold uppercase tracking-widest leading-tight">Años liderando la<br>salud cutánea</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPUESTA DE VALOR / UBICACIÓN -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Valor 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-navy mb-6">
+                        <i class="fa-solid fa-user-doctor text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Staff Certificado</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Médicos especialistas de primer nivel dirigidos por el Dr. Carlos Gatti.</p>
+                </div>
+                <!-- Valor 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-navy mb-6">
+                        <i class="fa-solid fa-microscope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Tecnología Láser</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Contamos con mapeo digital y equipos de última generación para diagnósticos seguros.</p>
+                </div>
+                <!-- Valor 3: UBICACIÓN RESALTADA -->
+                <div class="bg-navy p-8 rounded-3xl shadow-xl text-white transform md:-translate-y-4">
+                    <div class="w-14 h-14 bg-blue-500 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-location-dot text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Ubicación Estratégica</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">
+                        Estamos en el corazón de Morón, <strong>frente a la Clínica Modelo</strong>. Fácil acceso y zona comercial segura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOQUE DE MISIÓN DESTACADO -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <i class="fa-solid fa-quote-left text-blue-100 text-8xl absolute top-10 left-10 lg:left-40"></i>
+            <div class="relative z-10 space-y-8">
+                <h2 class="text-3xl md:text-4xl font-light text-navy italic leading-relaxed">
+                    "Nuestra misión es cuidar cada piel con la misma dedicación y profesionalismo desde 1984, integrando la ciencia médica con la calidez humana en cada consulta."
+                </h2>
+                <div class="pt-6">
+                    <p class="font-bold text-navy uppercase tracking-[0.3em] text-sm">Dirección Médica IMC</p>
+                    <div class="h-1 w-20 bg-medicalBlue mx-auto mt-4 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPECIALIDADES: ACCESO RÁPIDO -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-navy mb-4 italic">Nuestras Áreas Médicas</h2>
+                <p class="text-gray-500">Todo lo que tu piel necesita en un solo lugar.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Clínica -->
+                <div class="group bg-white rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581594632702-f20137f0cce9?auto=format&fit=crop&q=80" alt="Especialidad" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-navy mb-4">Dermatología Clínica</h3>
+                        <p class="text-gray-500 text-sm mb-8 leading-relaxed">Acné, Psoriasis, Rosácea y control digital de lunares.</p>
+                        <a href="especialidades.html" class="inline-block w-full py-4 bg-navy text-white rounded-2xl font-bold hover:bg-blue-900 transition-colors uppercase text-xs tracking-widest">
+                            Ver todas las especialidades
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Estética -->
+                <div class="group bg-white rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?auto=format&fit=crop&q=80" alt="Especialidad" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-navy mb-4">Dermatología Estética</h3>
+                        <p class="text-gray-500 text-sm mb-8 leading-relaxed">Botox, Ácido Hialurónico, Luz Pulsada y Mesoterapia.</p>
+                        <a href="estetica.html" class="inline-block w-full py-4 bg-navy text-white rounded-2xl font-bold hover:bg-blue-900 transition-colors uppercase text-xs tracking-widest">
+                            Ver tratamientos estéticos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Staff (Nuevo) -->
+                <div class="group bg-white rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80" alt="Staff Médico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold text-navy mb-4">Nuestro Staff</h3>
+                        <p class="text-gray-500 text-sm mb-8 leading-relaxed">Conocé a los profesionales expertos que cuidarán de vos.</p>
+                        <a href="equipo.html" class="inline-block w-full py-4 bg-navy text-white rounded-2xl font-bold hover:bg-blue-900 transition-colors uppercase text-xs tracking-widest">
+                            Conocer al equipo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <span class="text-2xl font-bold text-navy italic">IMC<span class="text-medicalBlue">.</span></span>
+                <p class="mt-4 text-gray-500 text-sm leading-relaxed max-w-xs">
+                    40 años brindando excelencia médica en el centro de Morón. Tu piel en manos de expertos.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-navy mb-6 uppercase text-xs tracking-widest">Ubicación y Contacto</h4>
+                <ul class="space-y-4 text-sm text-gray-600">
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-location-dot text-medicalBlue"></i>
+                        <span>Uruguay 279, Morón (Frente Clínica Modelo)</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-medicalBlue"></i>
+                        <span>11 4629-1967</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-envelope text-medicalBlue"></i>
+                        <span>imcutanea@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-navy mb-6 uppercase text-xs tracking-widest">Redes Sociales</h4>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-2xl text-gray-400 hover:text-navy transition-all"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-2xl text-gray-400 hover:text-navy transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-2xl text-gray-400 hover:text-navy transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-50 text-center text-gray-400 text-[10px] uppercase tracking-widest font-bold">
+            &copy; 2024 Instituto de Medicina Cutánea - Todos los derechos reservados
+        </div>
+    </footer>
+
+</body>
+</html>

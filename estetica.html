@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética y Cosmiatría - IMC Morón</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .bg-navy { background-color: #1a365d; }
+        .text-navy { color: #1a365d; }
+        .accent-soft { background-color: #f8fafc; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- NAVBAR (Consistente) -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <div class="font-bold text-2xl text-navy tracking-tighter">
+                            IMC<span class="text-blue-500">.</span>
+                        </div>
+                        <div class="ml-2 leading-none border-l-2 border-navy pl-2 hidden md:block">
+                            <span class="text-[10px] uppercase block font-bold tracking-widest">Instituto de</span>
+                            <span class="text-[10px] uppercase block">Medicina Cutánea</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-navy transition">Inicio</a>
+                    <a href="index.html#sobre-nosotros" class="text-gray-600 hover:text-navy transition">Sobre Nosotros</a>
+                    <a href="equipo.html" class="text-gray-600 hover:text-navy transition">Equipo Médico</a>
+                    <a href="especialidades.html" class="text-gray-600 hover:text-navy transition">Especialidades</a>
+                    <a href="estetica.html" class="text-navy font-semibold">Estética</a>
+                    <a href="contacto.html" class="bg-navy text-white px-5 py-2 rounded-full hover:bg-blue-900 transition shadow-md">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO ESTÉTICA -->
+        <section class="relative py-20 bg-slate-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Estética Médica</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-navy mt-4 mb-6">Ciencia aplicada a la belleza de tu piel</h1>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Combinamos protocolos de cosmiatría avanzada con procedimientos médicos inyectables y tecnología de vanguardia, siempre bajo la supervisión de nuestro equipo dermatológico.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. COSMIATRÍA -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div class="max-w-2xl">
+                        <h2 class="text-3xl font-bold text-navy mb-4">Cosmiatría Médica</h2>
+                        <p class="text-gray-600">Tratamientos de gabinete realizados por expertas y supervisados por médicos dermatólogos para garantizar seguridad y eficacia en cada sesión.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tratamiento 1 -->
+                    <div class="group bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-xl transition duration-300">
+                        <div class="h-52 bg-gray-200">
+                            <!-- IMAGEN: Limpieza facial profunda -->
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80" alt="Limpieza Facial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy mb-2">Limpiezas Faciales</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">Protocolos de higiene profunda e hidratación según el tipo de piel (seca, grasa o mixta).</p>
+                        </div>
+                    </div>
+
+                    <!-- Tratamiento 2 -->
+                    <div class="group bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-xl transition duration-300">
+                        <div class="h-52 bg-gray-200">
+                            <!-- IMAGEN: Peeling químico -->
+                            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?auto=format&fit=crop&q=80" alt="Peelings Químicos" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy mb-2">Peelings Químicos</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">Renovación celular para tratar manchas, marcas de acné y líneas de expresión finas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tratamiento 3 -->
+                    <div class="group bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-xl transition duration-300">
+                        <div class="h-52 bg-gray-200">
+                            <!-- IMAGEN: Tratamientos corporales -->
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" alt="Tratamientos Corporales" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy mb-2">Protocolos Corporales</h3>
+                            <p class="text-sm text-gray-500 leading-relaxed">Abordaje integral de la celulitis, flacidez y adiposidad localizada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón de consulta sección 1 -->
+                <div class="mt-12 text-center">
+                    <a href="https://wa.me/541146291967" class="inline-flex items-center space-x-2 bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 transition shadow-lg">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>Consultar por Cosmiatría</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. DERMATOLOGÍA ESTÉTICA (INYECTABLES Y TECH) -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-navy mb-4">Dermatología Estética Avanzada</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Procedimientos médicos de alta precisión para un rejuvenecimiento natural y seguro.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Botox -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                        <h4 class="font-bold text-navy text-lg mb-2">Toxina Botulínica</h4>
+                        <p class="text-xs text-gray-500 mb-4 italic">(Bótox)</p>
+                        <p class="text-sm text-gray-600">Suavizado de arrugas dinámicas en frente, entrecejo y contorno de ojos.</p>
+                    </div>
+                    <!-- Rellenos -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                        <h4 class="font-bold text-navy text-lg mb-2">Ácido Hialurónico</h4>
+                        <p class="text-xs text-gray-500 mb-4 italic">(Rellenos y labios)</p>
+                        <p class="text-sm text-gray-600">Restauración de volúmenes faciales y perfilado de labios con resultados naturales.</p>
+                    </div>
+                    <!-- Bioestimulación -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                        <h4 class="font-bold text-navy text-lg mb-2">Radiesse</h4>
+                        <p class="text-xs text-gray-500 mb-4 italic">(Bioestimulación)</p>
+                        <p class="text-sm text-gray-600">Estimulación de colágeno natural para combatir la flacidez facial y corporal.</p>
+                    </div>
+                    <!-- Tecnología -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                        <h4 class="font-bold text-navy text-lg mb-2">Luz Pulsada (IPL)</h4>
+                        <p class="text-xs text-gray-500 mb-4 italic">(Tecnología Láser)</p>
+                        <p class="text-sm text-gray-600">Tratamiento de manchas, rosácea y rejuvenecimiento global de la piel.</p>
+                    </div>
+                </div>
+
+                <!-- Lista extendida en formato texto/iconos para mobile -->
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                        <span class="text-gray-700 font-medium">Radiofrecuencia</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                        <span class="text-gray-700 font-medium">Plasma Rico en Plaquetas (Facial/Capilar)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                        <span class="text-gray-700 font-medium">Dermapen (Microneedling)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-blue-500"></i>
+                        <span class="text-gray-700 font-medium">Mesoterapia Facial</span>
+                    </div>
+                </div>
+
+                <!-- Botón de consulta sección 2 -->
+                <div class="mt-16 text-center">
+                    <a href="https://wa.me/541146291967" class="inline-flex items-center space-x-2 bg-navy text-white px-10 py-5 rounded-full font-bold hover:bg-blue-900 transition shadow-xl">
+                        <i class="fas fa-calendar-check text-xl"></i>
+                        <span>Solicitar Evaluación Médica</span>
+                    </a>
+                    <p class="text-gray-400 text-xs mt-4 uppercase tracking-tighter">Turnos sujetos a disponibilidad profesional</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (Idéntico) -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-navy font-bold text-xl mb-4">IMC</h3>
+                    <p class="text-gray-500">Líderes en dermatología clínica y estética en Morón desde hace 40 años.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> Rep. Oriental del Uruguay 279, Morón</li>
+                        <li><i class="fab fa-whatsapp text-green-500 mr-2"></i> 11 4629-1967</li>
+                        <li><i class="fab fa-instagram text-pink-500 mr-2"></i> @imc.piel</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy mb-4">Ubicación</h4>
+                    <p class="text-gray-600 text-sm">En el corazón de Morón Centro, Provincia de Buenos Aires.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Instituto de Medicina Cutánea. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

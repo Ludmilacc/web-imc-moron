@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades - IMC Morón</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .bg-navy { background-color: #1a365d; }
+        .text-navy { color: #1a365d; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- NAVBAR (Mismo diseño para consistencia) -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <div class="font-bold text-2xl text-navy tracking-tighter">
+                            IMC<span class="text-blue-500">.</span>
+                        </div>
+                        <div class="ml-2 leading-none border-l-2 border-navy pl-2 hidden md:block">
+                            <span class="text-[10px] uppercase block font-bold tracking-widest">Instituto de</span>
+                            <span class="text-[10px] uppercase block">Medicina Cutánea</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-navy transition">Inicio</a>
+                    <a href="index.html#sobre-nosotros" class="text-gray-600 hover:text-navy transition">Sobre Nosotros</a>
+                    <a href="equipo.html" class="text-gray-600 hover:text-navy transition">Equipo Médico</a>
+                    <a href="especialidades.html" class="text-navy font-semibold">Especialidades</a>
+                    <a href="estetica.html" class="text-gray-600 hover:text-navy transition">Estética</a>
+                    <a href="contacto.html" class="bg-navy text-white px-5 py-2 rounded-full hover:bg-blue-900 transition shadow-md">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HEADER DE PÁGINA -->
+        <section class="bg-navy py-20 text-white">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Especialidades Médicas</h1>
+                <p class="text-blue-100 max-w-2xl mx-auto text-lg">
+                    Abordamos la salud de la piel desde un enfoque integral, combinando diagnóstico clínico avanzado con soluciones quirúrgicas y estéticas.
+                </p>
+            </div>
+        </section>
+
+        <!-- 1. DERMATOLOGÍA CLÍNICA -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-blue-500 font-bold uppercase tracking-widest text-sm">Cuidado Integral</span>
+                        <h2 class="text-3xl font-bold text-navy mt-2 mb-6">Dermatología Clínica</h2>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Tratamos todas las afecciones que afectan la piel, el pelo y las uñas. Nuestro objetivo es el diagnóstico temprano y el tratamiento personalizado para cada paciente.
+                        </p>
+                        <!-- LISTA DE AFECCIONES EN CHIPS -->
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Acné</span>
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Alopecia</span>
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Psoriasis</span>
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Rosácea</span>
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Eczemas</span>
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Vitíligo</span>
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Dermatitis</span>
+                            <span class="bg-gray-100 text-navy px-4 py-2 rounded-full text-sm font-medium border border-gray-200">Control de Lunares</span>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <!-- IMAGEN: Dermatología Clínica (Consulta o paciente) -->
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80" alt="Consulta Clínica" class="rounded-2xl shadow-xl w-full h-80 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PEDIÁTRICA Y 3. CÁNCER (Grid 2 columnas) -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Dermatología Pediátrica -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-child text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy mb-4">Dermatología Pediátrica</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Atención especializada para bebés, niños y adolescentes. Entendemos que la piel infantil requiere un cuidado delicado y un enfoque cálido para que los más pequeños se sientan seguros.
+                        </p>
+                        <!-- ESPACIO PARA IMAGEN: Niño en consulta -->
+                        <div class="h-48 bg-gray-200 rounded-xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80" alt="Dermatología Pediátrica" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Cáncer de Piel y Dermatoscopía -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="w-12 h-12 bg-red-50 text-red-600 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-microscope text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy mb-4">Cáncer de Piel</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Contamos con tecnología de <strong>Mapeo Digital Corporal Total</strong>. La dermatoscopía digital permite detectar lesiones sospechosas en etapas tempranas, aumentando drásticamente la efectividad del tratamiento.
+                        </p>
+                        <!-- ESPACIO PARA IMAGEN: Equipo de mapeo digital -->
+                        <div class="h-48 bg-gray-200 rounded-xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80" alt="Dermatoscopía Digital" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TRICOLOGÍA Y MICOLOGÍA -->
+        <section class="py-20 bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold text-navy mb-4">Unidades Especializadas</h2>
+                    <p class="text-gray-600 italic">Áreas de estudio profundo para patologías específicas del cuero cabelludo y las uñas.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex items-center space-x-6 p-6 bg-blue-50 rounded-xl">
+                        <i class="fas fa-vial text-3xl text-blue-500"></i>
+                        <div>
+                            <h4 class="font-bold text-navy text-xl">Tricología</h4>
+                            <p class="text-gray-600">Diagnóstico avanzado de caída de cabello y salud capilar.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-6 p-6 bg-blue-50 rounded-xl">
+                        <i class="fas fa-bacteria text-3xl text-blue-500"></i>
+                        <div>
+                            <h4 class="font-bold text-navy text-xl">Micología</h4>
+                            <p class="text-gray-600">Estudio y tratamiento de hongos en piel y uñas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DERMATOLOGÍA QUIRÚRGICA -->
+        <section class="py-20 bg-gray-50 text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-navy mb-6">Dermatología Quirúrgica</h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-10">
+                    Realizamos procedimientos quirúrgicos ambulatorios de alta precisión para la remoción de quistes, lunares, tumores cutáneos y biopsias. Priorizamos tanto la salud del paciente como el resultado estético funcional.
+                </p>
+                <!-- IMAGEN: Quirófano o Instrumental (minimalista) -->
+                <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80" alt="Dermatología Quirúrgica" class="rounded-2xl shadow-lg mx-auto max-w-2xl w-full h-64 object-cover">
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (Idéntico) -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-navy font-bold text-xl mb-4">IMC</h3>
+                    <p class="text-gray-500">Más de 40 años dedicados a la salud de tu piel en Morón.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> Rep. Oriental del Uruguay 279, Morón</li>
+                        <li><i class="fab fa-whatsapp text-green-500 mr-2"></i> 11 4629-1967</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy mb-4">Redes</h4>
+                    <a href="#" class="text-gray-600 hover:text-pink-500 transition text-2xl"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Instituto de Medicina Cutánea.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
